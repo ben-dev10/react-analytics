@@ -1,9 +1,9 @@
-import Chart1 from "./components/Chart1";
+import AnalyticsCard from "./components/AnalyticsCard";
 
 function App() {
   return (
-    <div>
-      <Chart1 />
+    <div className="p-5">
+      <AnalyticsCard />
     </div>
   );
 }
