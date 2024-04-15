@@ -9,7 +9,7 @@ import {
   Area,
   ResponsiveContainer,
 } from "recharts";
-import { LineData, AreaData } from "../utils/data";
+import { LineData, AreaData, AreaDataMobile } from "../utils/data";
 
 export default function LineChart1() {
   return (
@@ -33,7 +33,7 @@ export default function LineChart1() {
 
 export function AreaChart1() {
   return (
-    <div className="max-w-[700px] h-[300px]">
+    <div className="max-w-[700px] h-[300px] hidden md:block">
       <ResponsiveContainer width="100%" height="80%">
         <AreaChart
           // width={730}
@@ -41,6 +41,38 @@ export function AreaChart1() {
           data={AreaData}
           margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
           className="text-[12px] fill-gray-400"
+        >
+          <defs>
+            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+              <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <XAxis dataKey="month" stroke="" tickMargin={10} />
+          <YAxis stroke="" tickMargin={10} />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Tooltip />
+          <Area
+            type="monotone"
+            dataKey="uv"
+            stroke="#8884d8"
+            fillOpacity={1}
+            fill="url(#colorUv)"
+          />
+        </AreaChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
+
+export function AreaChart1Mobile() {
+  return (
+    <div className="max-w-[700px] md:hidden h-[300px]">
+      <ResponsiveContainer width="100%" height="80%">
+        <AreaChart
+          data={AreaDataMobile}
+          margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+          className="text-[10px] fill-gray-400"
         >
           <defs>
             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

@@ -28,3 +28,12 @@ export const AreaData = [
   { month: "Nov", uv: 10, pv: 10 },
   { month: "Dec", uv: 20, pv: 150 },
 ];
+
+export const AreaDataMobile = [
+  { month: "Jan", uv: 20, pv: 250 },
+  { month: "Mar", uv: 350, pv: 30 },
+  { month: "May", uv: 150, pv: 60 },
+  { month: "Jul", uv: 60, pv: 180 },
+  { month: "Nov", uv: 10, pv: 10 },
+  { month: "Dec", uv: 20, pv: 150 },
+];

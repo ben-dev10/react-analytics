@@ -1,4 +1,4 @@
-import { AreaChart1 } from "./Charts";
+import { AreaChart1, AreaChart1Mobile} from "./Charts";
 // import LineChart1 from "./Charts";
 
 export default function AnalyticsCard() {
@@ -14,6 +14,7 @@ export default function AnalyticsCard() {
       </div> */}
       <div className="pt-8">
         <AreaChart1 />
+        <AreaChart1Mobile />
       </div>
     </div>
   );
