@@ -1,4 +1,4 @@
-import { AreaChart1, AreaChart1Mobile} from "./Charts";
+import { AreaChartDynamic } from "./Charts";
 // import LineChart1 from "./Charts";
 
 export default function AnalyticsCard() {
@@ -13,8 +13,7 @@ export default function AnalyticsCard() {
         <LineChart1 />
       </div> */}
       <div className="pt-8">
-        <AreaChart1 />
-        <AreaChart1Mobile />
+        <AreaChartDynamic />
       </div>
     </div>
   );

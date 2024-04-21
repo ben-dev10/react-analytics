@@ -15,25 +15,25 @@ export const LineData = [
 ];
 
 export const AreaData = [
-  { month: "Jan", uv: 20, pv: 250 },
-  { month: "Feb", uv: 50, pv: 400 },
-  { month: "Mar", uv: 350, pv: 30 },
-  { month: "Apr", uv: 30, pv: 130 },
-  { month: "May", uv: 150, pv: 60 },
-  { month: "Jun", uv: 20, pv: 300 },
-  { month: "Jul", uv: 60, pv: 180 },
-  { month: "Aug", uv: 200, pv: 30 },
-  { month: "Sept", uv: 400, pv: 30 },
-  { month: "Oct", uv: 50, pv: 60 },
-  { month: "Nov", uv: 10, pv: 10 },
-  { month: "Dec", uv: 20, pv: 150 },
+  { month: "Jan", count: 20,  },
+  { month: "Feb", count: 30,  },
+  { month: "Mar", count: 50,  },
+  { month: "Apr", count: 80,  },
+  { month: "May", count: 100, },
+  { month: "Jun", count: 130, },
+  { month: "Jul", count: 160, },
+  { month: "Aug", count: 200, },
+  { month: "Sept",count: 205, },
+  { month: "Oct", count: 208, },
+  { month: "Nov", count: 210, },
+  { month: "Dec", count: 250, },
 ];
 
 export const AreaDataMobile = [
-  { month: "Jan", uv: 20, pv: 250 },
-  { month: "Mar", uv: 350, pv: 30 },
-  { month: "May", uv: 150, pv: 60 },
-  { month: "Jul", uv: 60, pv: 180 },
-  { month: "Nov", uv: 10, pv: 10 },
-  { month: "Dec", uv: 20, pv: 150 },
+  { month: "Jan", count: 20,  },
+  { month: "Mar", count: 50,  },
+  { month: "May", count: 100, },
+  { month: "Jul", count: 160, },
+  { month: "Nov", count: 210, },
+  { month: "Dec", count: 250, },
 ];
